@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: left; /* Rata kiri */
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: left; /* Rata kiri */
+        }
+
+        .contact-info {
+            font-style: italic;
+            color: #888;
+            text-align: left; /* Rata kiri */
+        }
+
+        .bank-info {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: left; /* Rata kiri */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="content">Dear {{.DONOR_NAME}},</p>
+            <p class="content">Salam sejahtera!</p>
+        </div>
+        <div class="content">
+            <p>Kami dengan gembira ingin menyambut Anda dalam komunitas kami sebagai seorang donatur yang berdedikasi. Terima kasih atas dukungan Anda yang berharga untuk misi kami dalam memberikan bantuan kepada para mahasiswa yang membutuhkan.</p>
+            <p>Dengan kehadiran Anda, kami yakin kami dapat melanjutkan upaya kami untuk memberikan beasiswa kepada lebih banyak mahasiswa dan memperluas dampak positif kami dalam masyarakat.</p>
+            <p>Sebagai donatur kami, Anda memiliki peran penting dalam membentuk masa depan para mahasiswa dan membantu mereka mencapai impian mereka. Kami sangat menghargai kontribusi Anda yang berarti.</p>
+            <p>Kami ingin memastikan bahwa Anda merasa selamat datang dan terhubung dengan baik dengan kami. Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut tentang program kami, jangan ragu untuk menghubungi kami melalui email ini.</p>
+            <p>Sekali lagi, terima kasih atas dukungan Anda yang luar biasa. Kami sangat berharap dapat bekerja sama dengan Anda dalam mewujudkan perubahan positif dalam kehidupan para mahasiswa.</p>
+            <br />
+            <p class="bank-info">Informasi Transfer Donasi:<br />
+                Bank: {{.BANK_NAME}}<br />
+                Nomor Rekening: {{.ACCOUNT_NUMBER}}<br />
+                Atas Nama: {{.ACCOUNT_NAME}}</p>
+            <br /><br />
+            <p class="signature">Salam hangat,</p>
+            <p class="signature">Abdullah Ardiansyah</p>
+            <p class="contact-info">Alumni Agroekoteknologi 2012</p>
+            <p class="contact-info">Founder Yayasan Bold Trunojoyo Scholarships</p>
+        </div>
+    </div>
+</body>
+</html>

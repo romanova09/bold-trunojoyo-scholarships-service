@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+
+# Go
+api
+*.exe
+*.test
+*.out
+vendor/
+
+# IDE
+.vscode/
+.idea/
